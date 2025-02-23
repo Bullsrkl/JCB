@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JCB Hour Meter Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>JCB Hour Meter</h1>
+        <div class="calculator">
+            <div class="input-group">
+                <label for="startMeter">Start Meter</label>
+                <input type="number" id="startMeter">
+            </div>
+            <div class="input-group">
+                <label for="endMeter">End Meter</label>
+                <input type="number" id="endMeter">
+            </div>
+            <div class="input-group">
+                <label for="hourlyRate">Hourly Rate (₹)</label>
+                <input type="number" id="hourlyRate">
+            </div>
+
+            <div class="result-item">
+                <span>Total Time:</span>
+                <span class="result-value" id="totalTime">0h 0m</span>
+            </div>
+            <div class="result-item">
+                <span>Meter Points:</span>
+                <span class="result-value" id="meterPoints">0.00</span>
+            </div>
+            <div class="result-item">
+                <span>Total Amount:</span>
+                <span class="result-value" id="totalAmount">₹0.00</span>
+            </div>
+
+            <button id="resetButton">Reset</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
