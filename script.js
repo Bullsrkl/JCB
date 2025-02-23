@@ -19,6 +19,7 @@ if (savedData) {
     });
 }
 
+// Calculate results
 function calculateResults() {
     const start = parseFloat(inputs.startMeter.value) || 0;
     const end = parseFloat(inputs.endMeter.value) || 0;
